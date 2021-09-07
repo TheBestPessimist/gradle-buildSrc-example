@@ -24,3 +24,11 @@ It has 2 examples:
 - `Using legacy plugin application`
 
 However, there is no `Using buildSrc plugin dependency`. Can that be added as well?
+
+
+
+# How to run:
+
+```
+gradle clean check jacocoTestReport bootJar
+```

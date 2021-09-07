@@ -1,3 +1,3 @@
-rootProject.name = "sample"
+rootProject.name = "gradle buildSrc example"
 
 include("kotlin-with-spring-app")

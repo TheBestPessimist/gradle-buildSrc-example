@@ -1,4 +1,4 @@
-// TODO: how can i not duplicate V?
+// HELPME: how can i not duplicate V?
 object V {
     const val springBootVersion = "2.5.3"
     const val kotlinVersion = "1.5.10"
@@ -21,11 +21,16 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:${V.kotlinVersion}")
     implementation("org.springframework.boot:spring-boot-gradle-plugin:${V.springBootVersion}")
 
-//    TODO: what is the name of the plugin containing kotlin spring ( kotlin("plugin.spring") )?
+//    HELPME: what is the name of the plugin containing kotlin spring ( kotlin("plugin.spring") )?
 //      From https://plugins.gradle.org/plugin/org.jetbrains.kotlin.plugin.spring, i expect it to be
 //      implementation("org.jetbrains.kotlin:kotlin-allopen:1.5.10")
 //      but that makes no sense.
 //      @gradle documentation folks: Where can i find the name of the plugins??
+
+
+    implementation("gradle.plugin.org.barfuin.gradle.taskinfo:gradle-taskinfo:1.3.0")
+    implementation("org.jlleitschuh.gradle:ktlint-gradle:10.1.0")
+    implementation("org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.3")
 
 
 }
