@@ -1,3 +1,5 @@
-rootProject.name = "gradle buildSrc example"
+rootProject.name = "gradle buildSrc Versions issue"
+include("wwsc")
 
-include("kotlin-with-spring-app")
+// Not sure this is needed, but i'm having some issues with my  intellij and this fixed it
+project(":wwsc").name = "wwsc"
